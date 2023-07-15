@@ -1,5 +1,3 @@
-// document.getElementById("count").innerText = 5
-
 let count = 0;
 let countEl = document.getElementById("count");
 let saveEl = document.getElementById("save-el");
