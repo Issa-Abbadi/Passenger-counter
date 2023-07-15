@@ -1,13 +1,16 @@
 // document.getElementById("count").innerText = 5
 
-let count = 5;
-
-console.log(count);
+let count = 0;
+let countEl = document.getElementById("count");
+let saveEl = document.getElementById("save-el");
 
 function increment() {
-  document.getElementById("count").innerText++;
+  count++;
+  countEl.innerText = count;
 }
 
 function save() {
-  document.getElementById("count").innerText++;
+  let countStr = count + " - ";
+  saveEl.innerText += countStr;
+  console.log(count);
 }
